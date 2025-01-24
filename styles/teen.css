@@ -1,0 +1,333 @@
+/* Teen Hero Section */
+.teen-hero {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.stat-item {
+    text-align: center;
+    color: var(--white);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Categories Section */
+.categories {
+    background: var(--white);
+    padding: 5rem 1rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    margin-bottom: 3rem;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.category-card {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-card h3 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+/* Why Work Section */
+.why-work {
+    background: var(--light-gray);
+    padding: 5rem 1rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    padding: 5rem 1rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card cite {
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Opportunities Section */
+.opportunities {
+    background: var(--white);
+    padding: 5rem 1rem;
+}
+
+.opportunities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.opportunity-card {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.opportunity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.opportunity-card .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.opportunity-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background: var(--light-gray);
+    padding: 5rem 1rem;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 4rem auto 0;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    height: 2px;
+    background: var(--secondary-color);
+    z-index: 1;
+}
+
+.timeline-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 0 1rem;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem;
+}
+
+.timeline-step h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-content .primary-button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-step {
+        padding: 0;
+    }
+
+    .step-number {
+        margin-bottom: 1rem;
+    }
+
+    .opportunities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .categories-grid,
+    .benefits-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+/* Animations */
+.opportunity-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.opportunity-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.opportunity-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.timeline-step {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.timeline-step:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.timeline-step:nth-child(3) {
+    animation-delay: 0.4s;
+} 
